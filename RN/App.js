@@ -25,28 +25,68 @@ export default function App() {
             let iconName;
             if (route.name === 'Home') {
               iconName = "home"
-              return <AntDesign name={iconName} size={size} color={color}/>
+              return <AntDesign name={iconName} size={size} color={color} />
+
             } else if (route.name === 'Chart') {
               iconName = "line-chart"
-            } else if (route.name === 'Market'){
+              return <Fontisto name={iconName} size={size} color={color} />;
+
+            } else if (route.name === 'Market') {
               iconName = "shopping-bag-1"
+              return <Fontisto name={iconName} size={size} color={color} />;
+
             } else if (route.name === 'Issue') {
               return <FontAwesome name="newspaper-o" size={24} color="black" />
+
             } else {
-              return <Ionicons name="person" size={size} color={color}/>;
+              return <Ionicons name="person" size={size} color={color} />;
             }
-            return <Fontisto name={iconName} size={size} color={color} />;
           },
 
           tabBarActiveTintColor: 'tomato',
           tabBarInactiveTintColor: 'gray',
         })}
       >
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Chart" component={ChartScreen} />
-        <Tab.Screen name="Market" component={MarketScreen} />
-        <Tab.Screen name="Issue" component={IssueScreen} />
-        <Tab.Screen name="MyPage" component={MyPageScreen} />
+
+        <Tab.Screen
+          name="Home"
+          component={HomeScreen}
+          listeners={({ navigation, route }) => ({
+            tabPress: (e) => {
+              e.preventDefault();
+              navigation.navigate('Home');
+            },
+          })}
+        />
+
+        <Tab.Screen name="Chart" component={ChartScreen} listeners={({ navigation }) => ({
+          tabPress: (e) => {
+            e.preventDefault();
+            navigation.navigate("Chart");
+          },
+        })} />
+
+        <Tab.Screen name="Market" component={MarketScreen} listeners={({ navigation }) => ({
+          tabPress: (e) => {
+            e.preventDefault();
+            navigation.navigate("Market");
+          },
+        })} />
+
+        <Tab.Screen name="Issue" component={IssueScreen} listeners={({ navigation }) => ({
+          tabPress: (e) => {
+            e.preventDefault();
+            navigation.navigate("Issue");
+          },
+        })} />
+
+        <Tab.Screen name="MyPage" component={MyPageScreen} listeners={({ navigation }) => ({
+          tabPress: (e) => {
+            e.preventDefault();
+            navigation.navigate("MyPage");
+          },
+        })} />
+
       </Tab.Navigator>
     </NavigationContainer>
   );
