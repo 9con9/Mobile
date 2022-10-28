@@ -49,8 +49,8 @@ export default function App() {
       >
 
         <Tab.Screen
-          name="Home"
-          component={HomeScreen}
+          name="Home" component={HomeScreen}
+          options={{ headerShown:false }}
           listeners={({ navigation, route }) => ({
             tabPress: (e) => {
               e.preventDefault();
@@ -59,28 +59,36 @@ export default function App() {
           })}
         />
 
-        <Tab.Screen name="Chart" component={ChartScreen} listeners={({ navigation }) => ({
+        <Tab.Screen name="Chart" component={ChartScreen}
+        options={{ title: '차트' }}
+        listeners={({ navigation }) => ({
           tabPress: (e) => {
             e.preventDefault();
             navigation.navigate("Chart");
           },
         })} />
 
-        <Tab.Screen name="Market" component={MarketScreen} listeners={({ navigation }) => ({
+        <Tab.Screen name="Market" component={MarketScreen}
+        options={{ title: '카테고리' }}
+        listeners={({ navigation }) => ({
           tabPress: (e) => {
             e.preventDefault();
             navigation.navigate("Market");
           },
         })} />
 
-        <Tab.Screen name="Issue" component={IssueScreen} listeners={({ navigation }) => ({
+        <Tab.Screen name="Issue" component={IssueScreen}
+        options={{ title: '이슈' }}
+        listeners={({ navigation }) => ({
           tabPress: (e) => {
             e.preventDefault();
             navigation.navigate("Issue");
           },
         })} />
 
-        <Tab.Screen name="MyPage" component={MyPageScreen} listeners={({ navigation }) => ({
+        <Tab.Screen name="MyPage" component={MyPageScreen}
+        options={{ title: 'MY' }}
+        listeners={({ navigation }) => ({
           tabPress: (e) => {
             e.preventDefault();
             navigation.navigate("MyPage");
