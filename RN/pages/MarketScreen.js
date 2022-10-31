@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Dimensions, FlatList, TouchableOpacity, TextInput, ScrollView, Alert, Platform, SafeAreaView} from 'react-native';
 import { Searchbar  } from 'react-native-paper';
 import { Button } from 'react-native-paper';
+import { AntDesign } from '@expo/vector-icons';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
@@ -190,6 +191,12 @@ function MarketScreen({ navigation }) {
     Alert.alert(text)
   }
 
+  const alert = () => {
+    Alert.alert(
+      '가격이 평균보다 너무 높거나 낮다면 주의하세요. \n검색 약40초 소요'
+    )
+  }
+
   //검색
   // const onSearch = value => { startPy(value) }
   // const startPy = async (keyword) => {
@@ -270,8 +277,9 @@ function MarketScreen({ navigation }) {
 
       <View style={{width:'100%', height:8, backgroundColor:'#F2F2F2'}}/> 
       
-      <View style={{marginLeft:6, marginTop:5,}}>
-        <Text style={{fontSize:17}}>총 {itemData.length}개</Text>
+      <View style={{marginLeft:6, marginTop:5, flexDirection:'row', alignItems:'center'}}>
+        <AntDesign name="questioncircleo" size={20} color="#0088CC" onPress={alert} />
+        <Text style={{fontSize:17, marginLeft:7}}>총 {itemData.length}개</Text>
       </View>
 
       <View style={{paddingVertical: 15, marginLeft:6, marginBottom:150,}}>

@@ -32,8 +32,8 @@ export default function App() {
               return <Fontisto name={iconName} size={size} color={color} />;
 
             } else if (route.name === 'Market') {
-              iconName = "shopping-bag-1"
-              return <Fontisto name={iconName} size={size} color={color} />;
+              iconName = "shoppingcart"
+              return <AntDesign name={iconName} size={size} color={color} />;
 
             } else if (route.name === 'Issue') {
               return <FontAwesome name="newspaper-o" size={24} color="black" />
