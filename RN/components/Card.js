@@ -6,53 +6,53 @@ const { width: SCREEN_WIDTH } = Dimensions.get('window');
 const Card = (props) => {
     return (
         <View style={{flex:1}}>
-            <View style={{borderRadius:10, overflow:'hidden', width: SCREEN_WIDTH / 2.1,}}>
-            <ImageBackground style={styles.Img} source={{ uri: props.item.img_link }}>
-                <View style={{...styles.logoimg, backgroundColor : props.item.platform === '번개 장터' ? '#e40f1d' : 'white' }}>
-                    {
-                        props.item.platform === '당근 마켓' &&
-                        <Image 
-                        style={{width: 15, height: 22}}
-                        imageStyle={{ resizeMode: "cover" }}
-                        source={require('../assets/img/temp.png')}
-                    />
-                    }
-                    {
-                        props.item.platform === '번개 장터' &&
-                        <Image 
-                        style={{width: 15, height: 22}}
-                        imageStyle={{ resizeMode: "cover" }}
-                        source={require('../assets/img/bunjang.png')}
-                    />
-                    }
-                    {
-                        props.item.platform === '중고 나라' &&
-                        <Image 
-                        style={{width: 15, height: 15}}
-                        imageStyle={{ resizeMode: "cover" }}
-                        source={require('../assets/img/junggo.png')}
-                    />
-                    }
-                </View>
-            </ImageBackground>
+            <View style={{ borderRadius: 10, overflow: 'hidden', width: SCREEN_WIDTH / 2.1, }}>
+                <ImageBackground style={styles.Img} source={{ uri: props.item.img_link }}>
+                    <View style={{
+                        ...styles.outlierview,
+                        backgroundColor: props.item.outlier === 'low' ? '#e0f2ea' :
+                            props.item.outlier === 'normal' ? '#eaeaea' : 'red'
+                    }}>
+                        <Text style={{}}>
+                            {props.item.outlier === 'normal' ? "평균가" :
+                                props.item.outlier === 'high' ? "시세 이상" : "시세 이하"
+                            }
+                        </Text>
+                    </View>
+                </ImageBackground>
             </View>
 
             <View style={styles.textView}>
-                {/* {props.item.outlier == "normal"
-                    
-                } */}
-                <View style={{...styles.outlierview, 
-                backgroundColor: props.item.outlier === 'low' ? '#e0f2ea' :
-                props.item.outlier === 'normal' ? '#eaeaea' :'red'
-                }}>
-                    <Text style={{}}>
-                        {props.item.outlier === 'normal' ? "평균가" : 
-                        props.item.outlier === 'high' ? "시세 이상" : "시세 이하"
+                <View style={{flexDirection:'row', justifyContent:'space-between'}}>
+                    <Text style={styles.priceText}>{props.item.price}원</Text>
+                    <View style={styles.logoimg}>
+                        {
+                            props.item.platform === '당근 마켓' &&
+                            <Image
+                                style={{ width: 15, height: 22 }}
+                                imageStyle={{ resizeMode: "cover" }}
+                                source={require('../assets/img/temp.png')}
+                            />
                         }
-                    </Text>
+                        {
+                            props.item.platform === '번개 장터' &&
+                            <Image
+                                style={{ width: 19, height: 22 }}
+                                imageStyle={{ resizeMode: "cover" }}
+                                source={require('../assets/img/bunjang.png')}
+                            />
+                        }
+                        {
+                            props.item.platform === '중고 나라' &&
+                            <Image
+                                style={{ width: 20, height: 20 }}
+                                imageStyle={{ resizeMode: "cover" }}
+                                source={require('../assets/img/junggo.png')}
+                            />
+                        }
+                    </View>
                 </View>
 
-                <Text style={styles.priceText}>{props.item.price}원</Text>
                 <Text numberOfLines={1}>{props.item.name}</Text>
                 <Text style={{color:'gray'}}>{props.item.place}</Text>
                 <Text style={{color:'gray'}}>{props.item.time}</Text>
@@ -76,20 +76,18 @@ const styles = StyleSheet.create({
         width : SCREEN_WIDTH / 2.1,
     },
     priceText:{
-        fontSize:16,
+        fontSize:18,
         fontWeight:'bold',
-        marginTop:3,
+        marginTop:7,
         marginBottom:3,
     },
     logoimg:{
         backgroundColor:'white',
         width:'13%',
         height:'13%',
-        justifyContent:'center',
-        alignItems:'center',
-        marginLeft:10,
-        marginTop:10,
         borderRadius:6,
+        marginLeft:5,
+        marginTop:7,
     },
     outlierview:{
         marginTop:5,
