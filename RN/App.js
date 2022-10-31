@@ -50,7 +50,7 @@ export default function App() {
 
         <Tab.Screen
           name="Home" component={HomeScreen}
-          options={{ headerShown:false }}
+          options={{ headerShown:false, title: '홈' }}
           listeners={({ navigation, route }) => ({
             tabPress: (e) => {
               e.preventDefault();
@@ -69,7 +69,7 @@ export default function App() {
         })} />
 
         <Tab.Screen name="Market" component={MarketScreen}
-        options={{ title: '카테고리' }}
+        options={{ title: '마켓' }}
         listeners={({ navigation }) => ({
           tabPress: (e) => {
             e.preventDefault();
