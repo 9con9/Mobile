@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Card from '../components/Card';
 import { useEffect, useState } from 'react';
-import { StyleSheet, Text, View, Dimensions, FlatList, TouchableOpacity, TextInput, ScrollView, Alert, Platform, SafeAreaView} from 'react-native';
+import { StyleSheet, Text, View, Dimensions, FlatList, TouchableOpacity, TextInput, ScrollView, Alert, Modal, SafeAreaView, Pressable} from 'react-native';
 import { Searchbar  } from 'react-native-paper';
 import { Button } from 'react-native-paper';
 import { AntDesign } from '@expo/vector-icons';
@@ -185,6 +185,9 @@ function MarketScreen({ navigation }) {
   const [loading, setLoading] = useState(false);
   const [copyItems, setCopyItems] = useState([]);
 
+  //modal
+  const [modalVisible, setModalVisible] = useState(false);
+
   //text인풋
   const [text, setText] = React.useState("");
   const addToDo = () => {
@@ -278,7 +281,10 @@ function MarketScreen({ navigation }) {
       <View style={{width:'100%', height:8, backgroundColor:'#F2F2F2'}}/> 
       
       <View style={{marginLeft:6, marginTop:5, flexDirection:'row', alignItems:'center'}}>
-        <AntDesign name="questioncircleo" size={20} color="#0088CC" onPress={alert} />
+        <Pressable>
+          <AntDesign name="questioncircleo" size={20} color="#0088CC" onPress={() => setModalVisible(true)} />
+        </Pressable>
+        
         <Text style={{fontSize:17, marginLeft:7}}>총 {itemData.length}개</Text>
       </View>
 
@@ -294,6 +300,39 @@ function MarketScreen({ navigation }) {
           numColumns={2}
         />
       </View>
+
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={() => {
+          Alert.alert('Modal has been closed.');
+          setModalVisible(!modalVisible);
+        }}>
+      
+        <View style={styles.centeredView}>
+          <View style={styles.modalView}>
+            <Text style={styles.modalText}>
+            당근마켓, 번개장터, 중고나라 3개의 플랫폼이 모두 동시에 검색됩니다.
+            </Text>
+
+            <Text style={styles.modalText}>
+            가격이 평균보다 너무 높거나 낮다면
+            허위매물에 주의하세요.
+            </Text>
+
+            <Text style={styles.modalText}>
+            검색까지 약 20초 소요됩니다.
+            </Text>
+
+            <Pressable
+              style={[styles.button, styles.buttonClose]}
+              onPress={() => setModalVisible(!modalVisible)}>
+              <Text style={styles.textStyle}>확인했어요.</Text>
+            </Pressable>
+          </View>
+        </View>
+      </Modal>
     </View>
   );
 }
@@ -322,7 +361,46 @@ const styles = StyleSheet.create({
   btnStyle:{
     marginLeft:7, 
     backgroundColor:'white'
-  }
+  },
+  //모달
+  centeredView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 22,
+  },
+  modalView: {
+    margin: 20,
+    backgroundColor: 'white',
+    borderRadius: 20,
+    padding: 35,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  modalText: {
+    marginBottom: 15,
+    textAlign: 'center',
+  },
+  textStyle: {
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  button: {
+    borderRadius: 20,
+    padding: 10,
+    elevation: 2,
+  },
+  buttonClose: {
+    backgroundColor: '#2196F3',
+  },
 });
 
 
