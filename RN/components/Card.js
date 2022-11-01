@@ -10,11 +10,14 @@ const Card = (props) => {
                 <ImageBackground style={styles.Img} source={{ uri: props.item.img_link }}>
                     <View style={{
                         ...styles.outlierview,
-                        backgroundColor: props.item.outlier === 'low' ? '#e0f2ea' :
-                            props.item.outlier === 'normal' ? '#eaeaea' : 'red'
+                        borderColor: props.item.outlier === 'low' ? '#FF9133' :
+                            props.item.outlier === 'normal' ? '#38CC44' : '#FF4B4B'
                     }}>
-                        <Text style={{}}>
-                            {props.item.outlier === 'normal' ? "평균가" :
+                        <Text style={{fontSize:13,
+                            color: props.item.outlier === 'low' ? '#FF9133' :
+                            props.item.outlier === 'normal' ? '#38CC44' : '#FF4B4B'
+                        }}>
+                            {props.item.outlier === 'normal' ? "평균가에요!" :
                                 props.item.outlier === 'high' ? "시세 이상" : "시세 이하"
                             }
                         </Text>
@@ -90,11 +93,15 @@ const styles = StyleSheet.create({
         marginTop:7,
     },
     outlierview:{
-        marginTop:5,
-        width:70,
+        marginTop:8,
+        marginLeft:6,
+        width:80,
         height:25,
         justifyContent:'center',
         alignItems:'center',
-        borderRadius:6,
+        borderRadius:15,
+        backgroundColor:'#FFFFFF',
+        opacity:0.87,
+        borderWidth: 2,
     }
 });
