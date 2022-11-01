@@ -1,20 +1,40 @@
 import * as React from 'react';
-import { Text, View, TouchableOpacity, Butto, StyleSheet, Dimensions, ImageBackground, StatusBar, Alert } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, TouchableOpacity, Alert, Modal, Pressable, StatusBar, ImageBackground } from 'react-native';
 import Chart from '../components/Chart';
-import { Searchbar  } from 'react-native-paper';
+import { Searchbar } from 'react-native-paper';
+import { useEffect, useState } from 'react';
+import { AntDesign } from '@expo/vector-icons';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
-function ChartScreen({navigation}) {
+function ChartScreen({ navigation }) {
   const [text, setText] = React.useState("");
+  const [avg, setAvg] = React.useState(0);
   const addToDo = () => {
     Alert.alert(text)
   }
 
+  //modal
+  const [modalVisible, setModalVisible] = useState(false);
+
+
+  // let num = new Array(100,200,300,400,500,600,700,800);
+
+  // setAvg(average(num))
+
+  // function average(array) {
+  //   var sum = 0.0;
+
+  //   for (var i = 0; i < array.length; i++)
+  //     sum += array[i];
+
+  //   return sum / array.length;
+  // }
+
   return (
-    <View style={{ flex: 1}}>
+    <View style={{ flex: 1 }}>
       <StatusBar style="auto" barStyle='light-content' />
-      
+
       <View style={{ overflow: 'hidden', width: '100%', height: '40%' }}>
         <ImageBackground style={styles.Img} imageStyle={{ resizeMode: "cover" }} source={require('../assets/img/chart.jpg')}>
           <View style={styles.innerview}>
@@ -24,7 +44,11 @@ function ChartScreen({navigation}) {
         </ImageBackground>
       </View>
 
-      <View style={{ marginTop: 20, alignItems:'center', marginBottom:15,}}>
+      <View style={{ marginTop: 20, flexDirection:'row',  alignItems:'center', justifyContent:'space-around', marginBottom: 20, }}>
+        <Pressable>
+          <AntDesign style={{marginLeft:8}} name="questioncircleo" size={25} color="#0088CC" onPress={() => setModalVisible(true)} />
+        </Pressable>
+
         <TouchableOpacity>
           <Searchbar
             mode='outlined'
@@ -40,7 +64,43 @@ function ChartScreen({navigation}) {
         </TouchableOpacity>
       </View>
 
-      <Chart/>
+      <Chart />
+
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={() => {
+          Alert.alert('Modal has been closed.');
+          setModalVisible(!modalVisible);
+        }}>
+
+        <View style={styles.centeredView}>
+          <View style={styles.modalView}>
+            <Text >
+              중고 상품의 최근 1주일 시세를 
+            </Text>
+            <Text style={styles.modalText}>
+              볼 수 있는 차트입니다.
+            </Text>
+
+            <Text style={styles.modalText}>
+              시세는 가격의 이상치를 제거한 중앙 값입니다.
+            </Text>
+
+            <Text style={styles.modalText}>
+              검색까지 약 1분의 시간이 소요됩니다.
+            </Text>
+
+            <Pressable
+              style={[styles.button, styles.buttonClose]}
+              onPress={() => setModalVisible(!modalVisible)}>
+              <Text style={styles.textStyle}>확인했어요.</Text>
+            </Pressable>
+          </View>
+        </View>
+      </Modal>
+
     </View>
   );
 }
@@ -58,28 +118,67 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   Img: {
-    width:'100%',
-    height:'100%',
+    width: '100%',
+    height: '100%',
   },
   searchbar: {
-    width: SCREEN_WIDTH-20,
-    backgroundColor : 'white',
+    width: SCREEN_WIDTH - 55,
+    backgroundColor: 'white',
   },
   innerview: {
-    flex:1,
-    justifyContent:'center',
-    alignItems:'center',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   subtext: {
     color: 'white',
-    marginTop:7,
-    fontSize:13,
+    marginTop: 7,
+    fontSize: 13,
   },
   maintext: {
-    marginTop:5,
+    marginTop: 5,
     color: 'white',
-    fontSize:31,
-    fontWeight:'bold',
+    fontSize: 31,
+    fontWeight: 'bold',
   },
 
+  //모달
+  centeredView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 22,
+  },
+  modalView: {
+    margin: 20,
+    backgroundColor: 'white',
+    borderRadius: 20,
+    padding: 35,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  modalText: {
+    marginBottom: 15,
+    textAlign: 'center',
+  },
+  textStyle: {
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  button: {
+    borderRadius: 20,
+    padding: 10,
+    elevation: 2,
+  },
+  buttonClose: {
+    backgroundColor: '#2196F3',
+  },
 });
