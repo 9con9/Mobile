@@ -7,8 +7,10 @@ const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
 function HomeScreen({ navigation }) {
   const [text, setText] = React.useState("");
-  const addToDo = () => {
-    Alert.alert(text)
+  const searchMarket = () => {
+    navigation.navigate('Market', {
+      keyword: text,
+    });
   }
 
   return (
@@ -35,7 +37,7 @@ function HomeScreen({ navigation }) {
             style={styles.searchbar}
             outlineColor='green'
             activeOutlineColor='green'
-            onSubmitEditing={addToDo}
+            onSubmitEditing={searchMarket}
           />
         </TouchableOpacity>
       </View>

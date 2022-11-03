@@ -5,31 +5,44 @@ import { Searchbar } from 'react-native-paper';
 import { useEffect, useState } from 'react';
 import { AntDesign } from '@expo/vector-icons';
 
+//Axios
+import axios from 'axios';
+const baseUrl = 'http://192.168.2.97:5000';
+
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
 function ChartScreen({ navigation }) {
   const [text, setText] = React.useState("");
   const [avg, setAvg] = React.useState(0);
-  const addToDo = () => {
-    Alert.alert(text)
-  }
 
   //modal
   const [modalVisible, setModalVisible] = useState(false);
 
+  //차트 데이터
+  const [loading, setLoading] = useState(false);
+  const [chartData, setChartData] = useState({});
 
-  // let num = new Array(100,200,300,400,500,600,700,800);
+  const startPy = async (keyword) => {
+    setLoading(true)
+    try {
+      await axios({
+        method: "get",
+        url: `${baseUrl}/chart`,
+        params: {
+            value: keyword
+        },
+      })
+        .then(res => setChartData(res.data))
+        .catch(function(error){
+          console.log(error.response.data);
+        })
+    } catch (error) {
+      console.log(error.response.data);
+    }
+    setLoading(false);
+  }
 
-  // setAvg(average(num))
-
-  // function average(array) {
-  //   var sum = 0.0;
-
-  //   for (var i = 0; i < array.length; i++)
-  //     sum += array[i];
-
-  //   return sum / array.length;
-  // }
+  const onSearch = text => { startPy(text) }
 
   return (
     <View style={{ flex: 1 }}>
@@ -59,12 +72,19 @@ function ChartScreen({ navigation }) {
             style={styles.searchbar}
             outlineColor='green'
             activeOutlineColor='green'
-            onSubmitEditing={addToDo}
+            onSubmitEditing={onSearch}
           />
         </TouchableOpacity>
       </View>
 
-      <Chart />
+      {loading &&
+      <View style={{width:'100%', alignItems:'center', marginTop:15}}>
+        <ActivityIndicator size="large" color="#0000ff" />
+        <Text>검색 중입니다.</Text>
+      </View>
+      }
+
+      <Chart items={chartData}/>
 
       <Modal
         animationType="slide"
