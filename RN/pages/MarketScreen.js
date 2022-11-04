@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Dimensions, FlatList, TouchableOpacity, TextInput, ScrollView, Alert, Modal, SafeAreaView, Pressable, ActivityIndicator} from 'react-native';
 import { Searchbar, Button  } from 'react-native-paper';
 import { AntDesign } from '@expo/vector-icons';
-import { useFocusEffect } from '@react-navigation/native';
 
 //Axios
 import axios from 'axios';
@@ -1480,10 +1479,20 @@ function MarketScreen({ route, navigation }) {
           console.log(error.response.data);
       }
       setLoading(false);
+      console.log(itemData)
+  }
+
+  //replaceAll() 구현
+  String.prototype.replaceAll = function(org, dest) {
+    return this.split(org).join(dest);
   }
 
   //검색 실행 메서드
-  const onSearch = text => { startPy(text) }
+  const onSearch = (str) => {
+    str = text.replaceAll(' ', '%20')
+    console.log("검색어 :"+str)
+    startPy(str)
+  }
 
   return (
     <View style={styles.container}>
