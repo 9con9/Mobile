@@ -24,7 +24,6 @@ function IssueScreen({ navigation }) {
                 <ScrollView horizontal={true} style={styles.scrollBox}>
 
                     <View style={{justifyContent:'space-around',alignItems:'center', flexDirection:'row'}}>
-
                         <View style={{ overflow: 'hidden', width:180, marginLeft:12}}>
                             <ImageBackground style={styles.Img} imageStyle={{ resizeMode: "cover" }} source={require('../assets/img/naver.jpg')}>
                                 <View style={{...styles.innerview, marginRight:33,}}>

@@ -1,12 +1,18 @@
 import * as React from 'react';
 import { Text, View, Dimensions, TouchableOpacity, Button, StyleSheet, ImageBackground, Image} from 'react-native';
+import * as Linking from 'expo-linking';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
 const Card = (props) => {
+    const link = () => {
+        Linking.openURL(props.item.link)
+    }
+
     return (
         <View style={{flex:1}}>
             <View style={{ borderRadius: 10, overflow: 'hidden', width: SCREEN_WIDTH / 2.1, }}>
+                <TouchableOpacity onPress={link}>
                 <ImageBackground style={styles.Img} source={{ uri: props.item.img_link }}>
                     <View style={{
                         ...styles.outlierview,
@@ -23,6 +29,7 @@ const Card = (props) => {
                         </Text>
                     </View>
                 </ImageBackground>
+                </TouchableOpacity>
             </View>
 
             <View style={styles.textView}>
