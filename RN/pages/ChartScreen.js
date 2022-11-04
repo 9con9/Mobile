@@ -42,7 +42,17 @@ function ChartScreen({ navigation }) {
     setLoading(false);
   }
 
-  const onSearch = text => { startPy(text) }
+  //replaceAll() 구현
+  String.prototype.replaceAll = function(org, dest) {
+    return this.split(org).join(dest);
+  }
+
+  //검색 실행 메서드
+  const onSearch = (str) => {
+    str = text.replaceAll(' ', '%20')
+    console.log("검색어 :"+str)
+    startPy(str)
+  }
 
   return (
     <View style={{ flex: 1 }}>
