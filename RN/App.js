@@ -78,7 +78,7 @@ export default function App() {
         })} />
 
         <Tab.Screen name="Issue" component={IssueScreen}
-        options={{ title: '이슈' }}
+        options={{ headerShown:false, title: '이슈' }}
         listeners={({ navigation }) => ({
           tabPress: (e) => {
             e.preventDefault();

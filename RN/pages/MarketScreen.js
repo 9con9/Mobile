@@ -1500,7 +1500,7 @@ function MarketScreen({ route, navigation }) {
         <TouchableOpacity>
           <Searchbar
             mode='outlined'
-            placeholder="지역 상품명으로 검색하세요!"
+            placeholder="예) 천안 아이패드 에어3"
             inputStyle={{ fontSize: 15, color: 'grey' }}
             value={text}
             onChangeText={text => setText(text)}
