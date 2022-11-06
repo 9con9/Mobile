@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, Text, View, Dimensions, TouchableOpacity, Alert, Modal, Pressable, StatusBar, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, ActivityIndicator, TouchableOpacity, Alert, Modal, Pressable, StatusBar, ImageBackground } from 'react-native';
 import Chart from '../components/Chart';
 import { Searchbar } from 'react-native-paper';
 import { useEffect, useState } from 'react';
@@ -7,9 +7,101 @@ import { AntDesign } from '@expo/vector-icons';
 
 //Axios
 import axios from 'axios';
-const baseUrl = 'http://192.168.2.97:5000';
+const baseUrl = 'http://54.174.0.44:5000/';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
+
+const Dummy_Data = 
+{
+  "all": [
+    600000,
+    665000,
+    705000,
+    600000,
+    720000,
+    690000,
+    665000,
+    529000
+  ],
+  "all_not_date": [
+    "5\uc77c \uc804",
+    "7\uc77c \uc804"
+  ],
+  "bunjang": [
+    600000,
+    705000,
+    720000,
+    705000,
+    690000,
+    665000,
+    550000,
+    665000
+  ],
+  "bunjang_date": [
+    "6\uc77c \uc804",
+    "4\uc77c \uc804",
+    "3\uc77c \uc804",
+    "2\uc77c \uc804",
+    "\uc624\ub298"
+  ],
+  "bunjang_not_date": [
+    "1\uc77c \uc804",
+    "5\uc77c \uc804",
+    "7\uc77c \uc804"
+  ],
+  "dangn": [
+    600000,
+    600000,
+    665000,
+    560000,
+    705000,
+    690000,
+    600000,
+    720000
+  ],
+  "dangn_date": [
+    "1\uc77c \uc804",
+    "\uc624\ub298"
+  ],
+  "dangn_not_date": [
+    "2\uc77c \uc804",
+    "3\uc77c \uc804",
+    "4\uc77c \uc804",
+    "5\uc77c \uc804",
+    "6\uc77c \uc804",
+    "7\uc77c \uc804"
+  ],
+  "date": [
+    "6\uc77c \uc804",
+    "4\uc77c \uc804",
+    "3\uc77c \uc804",
+    "2\uc77c \uc804",
+    "1\uc77c \uc804",
+    "\uc624\ub298"
+  ],
+  "joongna": [
+    600000,
+    665000,
+    665000,
+    529000,
+    705000,
+    690000,
+    600000,
+    720000
+  ],
+  "joongna_date": [
+    "1\uc77c \uc804",
+    "\uc624\ub298"
+  ],
+  "joongna_not_date": [
+    "2\uc77c \uc804",
+    "3\uc77c \uc804",
+    "4\uc77c \uc804",
+    "5\uc77c \uc804",
+    "6\uc77c \uc804",
+    "7\uc77c \uc804"
+  ]
+}
 
 function ChartScreen({ navigation }) {
   const [text, setText] = React.useState("");
@@ -20,7 +112,9 @@ function ChartScreen({ navigation }) {
 
   //차트 데이터
   const [loading, setLoading] = useState(false);
-  const [chartData, setChartData] = useState({});
+  const [chartData, setChartData] = useState(Dummy_Data);
+  const [chartName, setChartName] = useState("");
+  const [chartAvg, setChartAvg] = useState("");
 
   const startPy = async (keyword) => {
     setLoading(true)
@@ -32,33 +126,38 @@ function ChartScreen({ navigation }) {
             value: keyword
         },
       })
-        .then(res => setChartData(res.data))
-        .catch(function(error){
+        .then(res => {
+          setChartData(res.data)
+          setChartAvg(getAvg(res.data.all))
+          })
+          .catch(function(error){
           console.log(error.response.data);
         })
     } catch (error) {
       console.log(error.response.data);
     }
     setLoading(false);
+    setChartName(keyword);
   }
 
-  //replaceAll() 구현
-  String.prototype.replaceAll = function(org, dest) {
-    return this.split(org).join(dest);
+  //시세 평균, 쉼표 붙이기
+  const getAvg = (arr) => {
+    let avg = arr.reduce((a, b) => a + b) / arr.length;
+    avg = avg.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    return avg
   }
 
   //검색 실행 메서드
-  const onSearch = (str) => {
-    str = text.replaceAll(' ', '%20')
-    console.log("검색어 :"+str)
-    startPy(str)
+  const onSearch = () => {
+    console.log("검색어 :"+text)
+    startPy(text)
   }
-
+  
   return (
     <View style={{ flex: 1 }}>
       <StatusBar style="auto" barStyle='light-content' />
 
-      <View style={{ overflow: 'hidden', width: '100%', height: '40%' }}>
+      <View style={{ overflow: 'hidden', width: '100%', height: '35%' }}>
         <ImageBackground style={styles.Img} imageStyle={{ resizeMode: "cover" }} source={require('../assets/img/chart.jpg')}>
           <View style={styles.innerview}>
             <Text style={styles.maintext}>차트</Text>
@@ -67,7 +166,7 @@ function ChartScreen({ navigation }) {
         </ImageBackground>
       </View>
 
-      <View style={{ marginTop: 20, flexDirection:'row',  alignItems:'center', justifyContent:'space-around', marginBottom: 20, }}>
+      <View style={{ marginTop: 20, flexDirection:'row',  alignItems:'center', justifyContent:'space-around', marginBottom: 5, }}>
         <Pressable>
           <AntDesign style={{marginLeft:8}} name="questioncircleo" size={25} color="#0088CC" onPress={() => setModalVisible(true)} />
         </Pressable>
@@ -87,11 +186,18 @@ function ChartScreen({ navigation }) {
         </TouchableOpacity>
       </View>
 
-      {loading &&
-      <View style={{width:'100%', alignItems:'center', marginTop:15}}>
-        <ActivityIndicator size="large" color="#0000ff" />
-        <Text>검색 중입니다.</Text>
-      </View>
+      {loading ?
+        <View style={{ width: '100%', alignItems: 'center', height: 60 }}>
+          <ActivityIndicator size="large" color="#0000ff" />
+          <Text style={{ color: '#148CFF' }}>👀시세 데이터를 수집하고 있어요.</Text>
+        </View>
+        :
+        chartName ?
+          <View style={{ width: '100%', height: 33, alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ color: '#148CFF' }}>{chartName}의 최근 7일 시세는 {chartAvg}원 입니다.</Text>
+          </View>
+        :
+          <View style={{height: 18 }} />
       }
 
       <Chart items={chartData}/>
@@ -119,7 +225,7 @@ function ChartScreen({ navigation }) {
             </Text>
 
             <Text style={styles.modalText}>
-              검색까지 약 1분의 시간이 소요됩니다.
+              검색까지 약 20~40초의 시간이 소요됩니다.
             </Text>
 
             <Pressable

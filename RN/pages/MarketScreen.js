@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Dimensions, FlatList, TouchableOpacity, TextInput, ScrollView, Alert, Modal, SafeAreaView, Pressable, ActivityIndicator} from 'react-native';
 import { Searchbar, Button  } from 'react-native-paper';
 import { AntDesign } from '@expo/vector-icons';
+import {Picker} from '@react-native-picker/picker';
 
 //Axios
 import axios from 'axios';
@@ -1435,28 +1436,44 @@ const Dummy_Data =
 ]
 
 function MarketScreen({ route, navigation }) {
-  const [itemData, setItemData] = React.useState(Dummy_Data);
-
+  const [itemData, setItemData] = useState(Dummy_Data);
+  const [copyItemData, setCopyItemData] = useState(Dummy_Data);
   const [loading, setLoading] = useState(false);
-  const [copyItems, setCopyItems] = useState([]);
 
   //modal
   const [modalVisible, setModalVisible] = useState(false);
 
   //text인풋
   const [text, setText] = React.useState("");
-  const addToDo = () => {
-    Alert.alert(text)
+
+  //picker, 마켓 필터링
+  const [selected, setSelected] = useState("전체");
+
+  useEffect(() => {
+    filterItems(selected);
+  }, [selected]);
+
+  const filterItems = (str) => {
+    if (str === "가격") {
+      setCopyItemData(itemData);
+    }
+    else if (str === "평균가") {
+      setCopyItemData(itemData.filter((i) =>
+        i.outlier.includes("normal")
+      ))
+    }
+    else if (str === "시세 이하") {
+      setCopyItemData(itemData.filter((i) =>
+        i.outlier.includes("low")
+      ))
+    }
+    else if (str === "시세 이상") {
+      setCopyItemData(itemData.filter((i) =>
+        i.outlier.includes("high")
+      ))
+    }
   }
 
-  //null 체크 함수
-  function isEmpty(str){	
-		if(typeof str == "undefined" || str == null || str == "")
-			return true;
-		else
-			return false ;
-	}
-  
   //검색
   const startPy = async (keyword) => {
       setLoading(true)
@@ -1470,7 +1487,7 @@ function MarketScreen({ route, navigation }) {
           })
               .then(res => {
                   setItemData(res.data);
-                  //setCopyItems(res.data);
+                  setCopyItemData(res.data);
               })
               .catch(function (error) {
                   console.log(error.response.data);
@@ -1479,19 +1496,12 @@ function MarketScreen({ route, navigation }) {
           console.log(error.response.data);
       }
       setLoading(false);
-      console.log(itemData)
-  }
-
-  //replaceAll() 구현
-  String.prototype.replaceAll = function(org, dest) {
-    return this.split(org).join(dest);
   }
 
   //검색 실행 메서드
-  const onSearch = (str) => {
-    str = text.replaceAll(' ', '%20')
-    console.log("검색어 :"+str)
-    startPy(str)
+  const onSearch = () => {
+    console.log("검색어 :"+text)
+    startPy(text)
   }
 
   return (
@@ -1547,7 +1557,7 @@ function MarketScreen({ route, navigation }) {
         </ScrollView>
       </SafeAreaView>
 
-      <View style={{width:'100%', height:8, backgroundColor:'#F2F2F2'}}/>
+      <View style={{width:'100%', height:7, backgroundColor:'#F2F2F2'}}/>
 
       {loading &&
       <View style={{width:'100%', alignItems:'center', marginTop:15}}>
@@ -1556,24 +1566,40 @@ function MarketScreen({ route, navigation }) {
       </View>
       }
 
-      <View style={{marginLeft:6, marginTop:5, flexDirection:'row', alignItems:'center'}}>
-        <Pressable>
-          <AntDesign name="questioncircleo" size={20} color="#0088CC" onPress={() => setModalVisible(true)} />
-        </Pressable>
-        <Text style={{fontSize:17, marginLeft:7}}>총 {itemData.length}개</Text>
-      </View>
+      <SafeAreaView>
+        <View style={{ height: 30, width: '100%', marginLeft: 6, marginTop: 5, flexDirection: 'row', alignItems: 'center', backgroundColor: 'white' }}>
+          <Pressable>
+            <AntDesign name="questioncircleo" size={20} color="#0088CC" onPress={() => setModalVisible(true)} />
+          </Pressable>
+          <Text style={{ fontSize: 17, marginLeft: 7 }}>총 {copyItemData.length}개</Text>
+
+          <Picker
+            style={{ width: 126, marginLeft: 'auto' }}
+            selectedValue={selected}
+            onValueChange={(itemValue, itemIndex) =>{setSelected(itemValue)}}
+            >
+            <Picker.Item label="가격" value="가격" />
+            <Picker.Item label="평균가" value="평균가" />
+            <Picker.Item label="시세 이하" value="시세 이하" />
+            <Picker.Item label="시세 이상" value="시세 이상" />
+          </Picker>
+        </View>
+      </SafeAreaView>
 
       <View style={{paddingVertical: 15, marginLeft:6, marginBottom:150,}}>
-        <FlatList
+        { copyItemData &&
+          <FlatList
           columnWrapperStyle={{
             justifyContent: 'space-between',
             marginBottom: 32,
           }}
-          data={itemData}
+          data={copyItemData}
           renderItem={({ item }) => <Card item={item} />}
           keyExtractor={(item, index) => index}
+          extraData={copyItemData}
           numColumns={2}
         />
+        }
       </View>
 
       <Modal

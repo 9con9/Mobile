@@ -48,11 +48,6 @@ function HomeScreen({ navigation }) {
 export default HomeScreen;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white',
-    paddingHorizontal: 20,
-  },
   cardBox: {
     flex: 1,
     flexDirection: 'row',

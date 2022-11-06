@@ -11,6 +11,8 @@ const chartConfig = {
   strokeWidth: 3,
   barPercentage: 11,
   useShadowColorFromDataset: true,
+  barPercentage:1,
+  decimalPlaces:0
 };
 
 export default function Chart(props) {
@@ -18,35 +20,34 @@ export default function Chart(props) {
     labels: ["7", "6", "5", "4", "3", "2", "1", "오늘"],
     datasets: [
       {
-        data: [20, 45, 28, 80, 99, 43, 54],
+        data: props.items.dangn,
         color: (opacity = 0) => `rgba(249, 161, 74)`,
         strokeWidth: 3 // optional
       },
       {
-        data: [66, 44, 11, 22, 33, 39, 12],
+        data: props.items.bunjang,
         color: (opacity = 0) => `rgba(250, 105, 136)`,
         strokeWidth: 3 // optional
       },
       {
-        data: [66, 44, 11, 22, 33, 44, 44],
+        data: props.items.joongna,
         color: (opacity = 0) => `rgba(47, 185, 105)`,
         strokeWidth: 3 // optional
       },
       {
-        data: [55, 22, 33, 44, 55, 66, 77],
+        data: props.items.all,
         color: (opacity = 0) => `rgba(127, 186, 226)`,
         strokeWidth: 3 // optional
       },
-
     ],
     legend: ["당근", "번개", "중고나라", "평균"] // optional
   };
 
   return (
-    <View>
+    <View style={{justifyContent:'center', alignItems:'center'}}>
       <LineChart
         data={data}
-        width={screenWidth}
+        width={screenWidth-10}
         height={220}
         chartConfig={chartConfig}
       />

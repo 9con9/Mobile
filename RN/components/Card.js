@@ -37,7 +37,7 @@ const Card = (props) => {
                     <Text style={styles.priceText}>{props.item.price}원</Text>
                     <View style={styles.logoimg}>
                         {
-                            props.item.platform === '당근 마켓' &&
+                            props.item.platform === '당근마켓' &&
                             <Image
                                 style={{ width: 15, height: 22 }}
                                 imageStyle={{ resizeMode: "cover" }}
@@ -45,7 +45,7 @@ const Card = (props) => {
                             />
                         }
                         {
-                            props.item.platform === '번개 장터' &&
+                            props.item.platform === '번개장터' &&
                             <Image
                                 style={{ width: 19, height: 22 }}
                                 imageStyle={{ resizeMode: "cover" }}
@@ -53,7 +53,7 @@ const Card = (props) => {
                             />
                         }
                         {
-                            props.item.platform === '중고 나라' &&
+                            props.item.platform === '중고나라' &&
                             <Image
                                 style={{ width: 20, height: 20 }}
                                 imageStyle={{ resizeMode: "cover" }}
