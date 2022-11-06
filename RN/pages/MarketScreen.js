@@ -21,7 +21,7 @@ const Dummy_Data =
       "name": "\uc0c8\uae30\uacc4\uae09 \uc5d0\uc5b4 4\uc138\ub300 64\uae30\uac00 \ud31d\ub2c8\ub2e4",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "520000",
       "time": "6\ubd84 \uc804"
     },
@@ -32,7 +32,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \ud480\ubc15 \uc2a4\uadf8 64g \uc640\uc774\ud30c\uc774 \uc0c1\ud0dcs\uae09 \ud310\ub9e4\ud569\ub2c8\ub2e4.",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc11c\uad6c \uac80\ub2e81\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "550000",
       "time": "1\uc2dc\uac04 \uc804"
     },
@@ -43,7 +43,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 256G + \uc560\ud50c\ud39c\uc2ac 2\uc138\ub300(\ucf00\uc774\uc2a4, \uc885\uc774\ud544\ub984, \ub85c\uc9c0\ud14d \ud0a4\ubcf4\ub4dc, \ub9c8\uc6b0\uc2a4, \ud39c\uc2ac\ucea1, \ucda9\uc804\uae30) \ud310\ub9e4",
       "outlier": "high",
       "place": "\uc778\ucc9c \uc11c\uad6c \uc2ec\uace1\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "750000",
       "time": "1\uc2dc\uac04 \uc804"
     },
@@ -54,7 +54,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \uc2a4\ud398\uc774\uc2a4\uadf8\ub808\uc774 64g \ud314\uc544\uc694 +\uc560\ucf00\ud50c",
       "outlier": "normal",
       "place": "\uad8c\uc1202\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "540000",
       "time": "1\uc2dc\uac04 \uc804"
     },
@@ -65,7 +65,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 64g + \uc560\ud50c\ud32c\uc2ac",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ubd80\ud3c9\uad6c \ubd80\ud3c91\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "700000",
       "time": "1\uc2dc\uac04 \uc804"
     },
@@ -76,7 +76,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b4 4\uc138\ub300 +\uc560\ud50c\ud39c\uc2ac 2\uc138\ub300",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "700000",
       "time": "1\uc2dc\uac04 \uc804"
     },
@@ -87,7 +87,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 256 \uc140\ub8f0\ub7ec",
       "outlier": "normal",
       "place": "\uc640\ubd80\uc74d",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "700000",
       "time": "2\uc2dc\uac04 \uc804"
     },
@@ -98,7 +98,7 @@ const Dummy_Data =
       "name": "\ubc84\ub17c(\uc601\uad6d) \uc5d0\uc5b4\ud504\ub77c\uc774\uc5b4 HB-810(2018\ub1449\uc6d4\uc0b0,3\ub9ac\ud130) \uc911\uace0\uad6c\uc785(4.5\ub9cc\uc6d0)\uc744 \uc6d0\ud558\uc2dc\uba74 \uc5f0\ub77d\uc744 \uc8fc\uc138\uc694",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "45000",
       "time": "2\uc2dc\uac04 \uc804"
     },
@@ -109,7 +109,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44 64 \uc2a4\uadf8 \uc640\uc774\ud30c\uc774 \ud310\ub9e4\ud569\ub2c8\ub2e4",
       "outlier": "normal",
       "place": "\uac80\ub2e8\uc0ac\uac70\ub9ac\uc5ed",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "550000",
       "time": "2\uc2dc\uac04 \uc804"
     },
@@ -120,7 +120,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 64g & \ub9e4\uc9c1\ud32c\uc2ac 2\uc138\ub300",
       "outlier": "normal",
       "place": "\uc778\ucc9c \ubd80\ud3c9\uad6c \ubd80\ud3c91\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "680000",
       "time": "2\uc2dc\uac04 \uc804"
     },
@@ -131,7 +131,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \ud480\uad6c\uc131 + \uc560\ud50c\ud39c\uc2ac2 + \ub85c\uc9c0\ud14d \ud0a4\ubcf4\ub4dc",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "799000",
       "time": "3\uc2dc\uac04 \uc804"
     },
@@ -142,7 +142,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \uc640\uc774\ud30c\uc774 + \uc560\ud50c\ud39c\uc2ac 2\uc138\ub300 \uc2e0\ud488\uae09",
       "outlier": "normal",
       "place": "\uc815\uc790\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "750000",
       "time": "3\uc2dc\uac04 \uc804"
     },
@@ -153,7 +153,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 64\uae30\uac00 \uc2a4\uadf8 +\uc560\ud50c\ud39c\uc2ac 2\uc138\ub300",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc11c\uad6c \uac00\uc8151\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "630000",
       "time": "3\uc2dc\uac04 \uc804"
     },
@@ -164,7 +164,7 @@ const Dummy_Data =
       "name": "K2 \ucf54\ub9ac\uc544 \uc5d0\uc5b4\ud150\ud2b84 \ucf54\uc9c0 \ubbf8\uac1c\ubd09 \uc0c8\uc81c\ud488",
       "outlier": "normal",
       "place": "\uace0\ucd0c\uc74d",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "380000",
       "time": "4\uc2dc\uac04 \uc804"
     },
@@ -175,7 +175,7 @@ const Dummy_Data =
       "name": "\uc5d0\uc5b4\ud31f\ud504\ub85c \uc67c\ucabd \uc720\ub2db 4.8\uc5d0 \ud314\uc544\uc694",
       "outlier": "normal",
       "place": "\uc6a9\uc5541\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "48000",
       "time": "5\uc2dc\uac04 \uc804"
     },
@@ -186,7 +186,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b4 4 \uc560\ud50c\ud39c\uc2ac2 \uc560\ucf00\ud50c",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "770000",
       "time": "5\uc2dc\uac04 \uc804"
     },
@@ -197,7 +197,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \uc2a4\uce74\uc774\ube14\ub8e8 64g wifi",
       "outlier": "low",
       "place": "\uc778\ucc9c \uc11c\uad6c \uac80\uc554\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "490000",
       "time": "6\uc2dc\uac04 \uc804"
     },
@@ -208,7 +208,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \uc140\ub8f0\ub7ec 64\uae30\uac00 \uc2a4\ud398\uc774\uc2a4 \uadf8\ub808\uc774 \ud31d\ub2c8\ub2e4.",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ub0a8\uad6c \ub3c4\ud6542,3\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "650000",
       "time": "7\uc2dc\uac04 \uc804"
     },
@@ -219,7 +219,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b4 4,5\uc138\ub300 \ub85c\uc9c0\ud14d \ud0a4\ubcf4\ub4dc \ud3f4\ub9ac\uc624",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "110000",
       "time": "7\uc2dc\uac04 \uc804"
     },
@@ -230,7 +230,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44 64g wifi",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "520000",
       "time": "7\uc2dc\uac04 \uc804"
     },
@@ -241,7 +241,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b42 64GB WiFi",
       "outlier": "low",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc11c\uad6c \uac80\ub2e84\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "180000",
       "time": "8\uc2dc\uac04 \uc804"
     },
@@ -252,7 +252,7 @@ const Dummy_Data =
       "name": "(\ubbf8\uac1c\ubd09)\uc544\uc774\ud328\ub4dc \uc5d0\uc5b45 \ube14\ub8e8 64GB WIFI \uc0c8\uc0c1\ud488",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc5f0\uc218\uad6c \uc1a1\ub3c42\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "720000",
       "time": "9\uc2dc\uac04 \uc804"
     },
@@ -263,7 +263,7 @@ const Dummy_Data =
       "name": "\uc5d0\uc5b4\ud504\ub77c\uc774\uae30 4L \ud31d\ub2c8\ub2e4",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "120000",
       "time": "10\uc2dc\uac04 \uc804"
     },
@@ -274,7 +274,7 @@ const Dummy_Data =
       "name": "[\uc0c8\uc81c\ud488] \uc544\uc774\ud328\ub4dc \uc5d0\uc5b45 64\uae30\uac00 \ube14\ub8e8, \uc2a4\ud398\uc774\uc2a4\uadf8\ub808\uc774 \ud310\ub9e4\ud569\ub2c8\ub2e4",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc11c\uad6c \uccad\ub77c1\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "760000",
       "time": "10\uc2dc\uac04 \uc804"
     },
@@ -285,7 +285,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \ud480\ubc15 \uc2a4\uadf8 64g wifi \uc0c1\ud0dcs\uae09 \ud310\ub9e4\ud569\ub2c8\ub2e4(\ubc30\ud130\ub9ac\uc131\ub2a595%)",
       "outlier": "normal",
       "place": "\uc778\ucc9c \uc11c\uad6c \uc655\uae38\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "550000",
       "time": "11\uc2dc\uac04 \uc804"
     },
@@ -296,7 +296,7 @@ const Dummy_Data =
       "name": "\uc5d0\uc5b4\ub9ac\uc5b8 1-4\ud3b8 \ube44\ub514\uc624\ud14c\uc774\ud504",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "75000",
       "time": "12\uc2dc\uac04 \uc804"
     },
@@ -307,7 +307,7 @@ const Dummy_Data =
       "name": "\ub098\uc774\ud0a4 \uc5d0\uc5b4\uc870\ub3584 \ub808\ud2b8\ub85c \ud4e8\uc5b4\uba38\ub2c8 \ud654\uc774\ud2b8 300 \ubb34\ub8cc\ubc30",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "140000",
       "time": "13\uc2dc\uac04 \uc804"
     },
@@ -318,7 +318,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b45 \ube14\ub8e8 \uc640\uc774\ud30c\uc774 64GB",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc11c\uad6c \uac00\uc88c2\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "730000",
       "time": "14\uc2dc\uac04 \uc804"
     },
@@ -329,7 +329,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44 \uc2a4\ud398\uc774\uc2a4\uadf8\ub808\uc774 256G wifi \ud31d\ub2c8\ub2e4",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "690000",
       "time": "15\uc2dc\uac04 \uc804"
     },
@@ -340,7 +340,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \uc140\ub8f0\ub7ec 64\uae30\uac00 \uc2a4\ud398\uc774\uc2a4\uadf8\ub808\uc774 \ud31d\ub2c8\ub2e4",
       "outlier": "normal",
       "place": "\uccad\uc6b4\ub300\ud559\uad50",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "650000",
       "time": "16\uc2dc\uac04 \uc804"
     },
@@ -351,7 +351,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44\uc138\ub300,\uc140\ub8f0\ub7ec\ubaa8\ub378 +\uc560\ud50c\ud39c2\ud3ec\ud568",
       "outlier": "normal",
       "place": "\uc778\ucc9c \uacc4\uc591\uad6c \ub3d9\uc591\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "650000",
       "time": "16\uc2dc\uac04 \uc804"
     },
@@ -362,7 +362,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 64\uae30\uac00+\uc560\ud50c\ud39c\uc2ac2\uc138\ub300",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "700000",
       "time": "17\uc2dc\uac04 \uc804"
     },
@@ -373,7 +373,7 @@ const Dummy_Data =
       "name": "(\ub9c8\uc9c0\ub9c9 \uac00\uaca9\ub0b4\ub9bc) \uc544\uc774\ud328\ub4dc \uc5d0\uc5b4 4\uc138\ub300 \uc2a4\uadf8 64gb \ub9ac\ud37c \uc0c8\uc81c\ud488 +\uc560\ucf00\ud50c +\uc560\ud50c\ud39c\uc2ac 2\uc138\ub300 \ud31d\ub2c8\ub2e4",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "700000",
       "time": "17\uc2dc\uac04 \uc804"
     },
@@ -384,7 +384,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44\uc138\ub300 \ube14\ub8e8 64\uc640\ud30c",
       "outlier": "normal",
       "place": "\uc7a5\uc8041\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "529000",
       "time": "20\uc2dc\uac04 \uc804"
     },
@@ -395,7 +395,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \uc2a4\ud398\uc774\uc2a4\uadf8\ub808\uc774 64GB \ud480\ubc15",
       "outlier": "high",
       "place": "\uc778\ucc9c \ubbf8\ucd94\ud640\uad6c \ub3c4\ud6542,3\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "700000",
       "time": "20\uc2dc\uac04 \uc804"
     },
@@ -406,7 +406,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b4 4 \uc5d0\ud50c\ud32c\uc2ac 2",
       "outlier": "normal",
       "place": "\uc778\ucc9c \uc11c\uad6c \ub2f9\ud558\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "600000",
       "time": "20\uc2dc\uac04 \uc804"
     },
@@ -417,7 +417,7 @@ const Dummy_Data =
       "name": "\ub9e5\ubd81\uc5d0\uc5b42013 13\uc778\uce58 i5 RAM 4GB SSD 128GB",
       "outlier": "low",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uacc4\uc591\uad6c \uacc4\uc0b02\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "169000",
       "time": "20\uc2dc\uac04 \uc804"
     },
@@ -428,7 +428,7 @@ const Dummy_Data =
       "name": "[\ubbf8\uac1c\ubd09] \uc544\uc774\ud328\ub4dc \uc5d0\uc5b45 64gb wifi \uc2a4\ub77c \ud310\ub9e4\ud569\ub2c8\ub2e4. \uc560\ud50c",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ubd80\ud3c9\uad6c \uc0b0\uace12\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "760000",
       "time": "21\uc2dc\uac04 \uc804"
     },
@@ -439,7 +439,7 @@ const Dummy_Data =
       "name": "ESR \uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \uc5d0\uc5b45 \uc2a4\ub9c8\ud2b8\ucee4\ubc84 \ucf00\uc774\uc2a4",
       "outlier": "low",
       "place": "\uc778\ucc9c \uc5f0\uc218\uad6c \ub3d9\ucd982\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "10000",
       "time": "22\uc2dc\uac04 \uc804"
     },
@@ -450,7 +450,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \uc2a4\uce74\uc774\ube14\ub8e8 64g wifi",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc11c\uad6c \uac80\uc554\uacbd\uc11c\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "490000",
       "time": "22\uc2dc\uac04 \uc804"
     },
@@ -461,7 +461,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44",
       "outlier": "normal",
       "place": "\ub3d9\ud0c45\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "550000",
       "time": "22\uc2dc\uac04 \uc804"
     },
@@ -472,7 +472,7 @@ const Dummy_Data =
       "name": "S\uae09\ub9e5\ubd81\uc5d0\uc5b47 13\uc778\uce58\ucf54\ub4dci5\uba544G\uc800128G A1466",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "320000",
       "time": "22\uc2dc\uac04 \uc804"
     },
@@ -483,7 +483,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \uc640\uc774\ud30c\uc774 64\uae30\uac00 \uc2a4\uce74\uc774\ube14\ub8e8",
       "outlier": "normal",
       "place": "\uc778\ucc9c \ubbf8\ucd94\ud640\uad6c \uc8fc\uc5483\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "600000",
       "time": "23\uc2dc\uac04 \uc804"
     },
@@ -494,7 +494,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \uc2a4\uce74\uc774\ube14\ub8e8 64GB wifi\ubaa8\ub378(\ub9c8\uc9c0\ub9c9\uac00\uaca9)(\uc548\ud314\ub838\uc5b4\uc694)",
       "outlier": "low",
       "place": "\uc778\ucc9c \uc11c\uad6c \uccad\ub77c2\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "460000",
       "time": "23\uc2dc\uac04 \uc804"
     },
@@ -505,7 +505,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 64\uae30\uac00 \uc2a4\uadf8 + \uc560\ud50c\ud39c\uc2ac 2\uc138\ub300",
       "outlier": "normal",
       "place": "\uc778\ucc9c \uc11c\uad6c \uac00\uc815\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "630000",
       "time": "23\uc2dc\uac04 \uc804"
     },
@@ -516,7 +516,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44+\uc560\ud50c\ud39c\uc2ac(\ucf00\uc774\uc2a4 \ub2e4 \uc788\uc74c)",
       "outlier": "normal",
       "place": "\uc778\ucc9c \uc5f0\uc218\uad6c \uc1a1\ub3c42\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "650000",
       "time": "24\uc2dc\uac04 \uc804"
     },
@@ -527,7 +527,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 + \uc560\ud50c\ud39c\uc2ac2 \uad6c\ud574\uc694!!",
       "outlier": "normal",
       "place": "\uc778\ucc9c \ub0a8\ub3d9\uad6c \ub17c\ud604\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "550000",
       "time": "1\uc77c \uc804"
     },
@@ -538,7 +538,7 @@ const Dummy_Data =
       "name": "\ub77c\ud478 air1 \ubb34\uc120\ucda9\uc804 \ube14\ub8e8\ud22c\uc2a4/2.4g \uc800\uc18c\uc74c \ub9c8\uc6b0\uc2a4",
       "outlier": "normal",
       "place": "\uc774\ubb381\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "38000",
       "time": "1\uc77c \uc804"
     },
@@ -549,7 +549,7 @@ const Dummy_Data =
       "name": "(\ub9c8\uc9c0\ub9c9 \uac00\uaca9\ub0b4\ub9bc) \uc544\uc774\ud328\ub4dc \uc5d0\uc5b4 4\uc138\ub300 \uc2a4\uadf8 64gb \ub9ac\ud37c \uc0c8\uc81c\ud488 +\uc560\ucf00\ud50c +\uc560\ud50c\ud39c\uc2ac 2\uc138\ub300 \ud31d\ub2c8\ub2e4",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "710000",
       "time": "1\uc77c \uc804"
     },
@@ -560,7 +560,7 @@ const Dummy_Data =
       "name": "(S\uae09)\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \uadf8\ub9b0 64G WIFI",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "555000",
       "time": "1\uc77c \uc804"
     },
@@ -571,7 +571,7 @@ const Dummy_Data =
       "name": "\ubc30\ud130\ub9ac99%)\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44\uc138\ub300 \ube14\ub8e8 64\uae30\uac00 \uc640\ud30c",
       "outlier": "normal",
       "place": "\uc7a5\uc8041\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "529000",
       "time": "1\uc77c \uc804"
     },
@@ -582,7 +582,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b4 4\uc138\ub300 64\uae30\uac00 \uc640\uc774\ud30c\uc774 \uc2a4\uce74\uc774\ube14\ub8e8",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "600000",
       "time": "1\uc77c \uc804"
     },
@@ -593,7 +593,7 @@ const Dummy_Data =
       "name": "\ubc30\ud130\ub9ac100%)\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 wifi 64gb",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "440000",
       "time": "1\uc77c \uc804"
     },
@@ -604,7 +604,7 @@ const Dummy_Data =
       "name": "\uc5d0\uc5b4\uc870\ub3584 \ubaa8\ud130\uc2a4\ud3ec\uce20(275)\ub2e8\ud488",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "350000",
       "time": "1\uc77c \uc804"
     },
@@ -615,7 +615,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44 256\uae30\uac00 \uc2e4\ubc84 + \uc560\ud50c\ud39c\uc2ac 2\uc138\ub300",
       "outlier": "high",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "980000",
       "time": "1\uc77c \uc804"
     },
@@ -626,7 +626,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \uc140\ub8f0\ub7ec",
       "outlier": "normal",
       "place": "\uc778\ucc9c \uc5f0\uc218\uad6c \uc625\ub828\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "550000",
       "time": "1\uc77c \uc804"
     },
@@ -637,7 +637,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44 64G \uc140\ub8f0\ub7ec \uc5d0\ud50c\ucf00\uc5b4\ud50c\ub7ec\uc2a4",
       "outlier": "normal",
       "place": "\uc778\ucc9c \ubbf8\ucd94\ud640\uad6c \uc8fc\uc5485\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "600000",
       "time": "1\uc77c \uc804"
     },
@@ -648,7 +648,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b4 4 64\uae30\uac00 gps \ud480\ubc15 S\uae09 \uc560\ucf00\ud50c\u2b55\ufe0f",
       "outlier": "normal",
       "place": "\uc778\ucc9c \ubbf8\ucd94\ud640\uad6c \ub3c4\ud654\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "650000",
       "time": "1\uc77c \uc804"
     },
@@ -659,7 +659,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b4 4 64\uae30\uac00 \uc2a4\uadf8 gps s\uae09 \uc560\ucf00\ud50c \u2b55\ufe0f",
       "outlier": "normal",
       "place": "\uc778\ucc9c \uc5f0\uc218\uad6c \uc1a1\ub3c41\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "670000",
       "time": "1\uc77c \uc804"
     },
@@ -670,7 +670,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \ud30c\uc6b0\uce58 \ud314\uc544\uc694",
       "outlier": "low",
       "place": "\uc778\ucc9c \uc5f0\uc218\uad6c \ub3d9\ucd983\ub3d9",
-      "platform": "\ub2f9\uadfc \ub9c8\ucf13",
+      "platform": "\ub2f9\uadfc\ub9c8\ucf13",
       "price": "11000",
       "time": "1\uc77c \uc804"
     },
@@ -681,7 +681,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44 64G \uc2a4\ud398\uc774\uc2a4\uadf8\ub808\uc774",
       "outlier": "normal",
       "place": "\uacbd\ud3ec\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "490000",
       "time": "2\uc77c \uc804"
     },
@@ -692,7 +692,7 @@ const Dummy_Data =
       "name": "\uc77c\uc81c 3/4 \uc5d0\uc5b4\uc784\ud399 \ud31d\ub2c8\ub2e4",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "130000",
       "time": "2\uc77c \uc804"
     },
@@ -703,7 +703,7 @@ const Dummy_Data =
       "name": "\ub9e5\ubd81\uc5d0\uc5b4m2 \uc2e4\ubc84 3\uc8fc\uac04 4\ud68c \uc0ac\uc6a9",
       "outlier": "high",
       "place": "\uad50\ud604.\uc548\ub9bc\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "1239000",
       "time": "2\uc77c \uc804"
     },
@@ -714,7 +714,7 @@ const Dummy_Data =
       "name": "\uc5d0\uc5b4\ubc29\uc74c\ubcbd 4\uc138\ud2b8 \ud31d\ub2c8\ub2e4",
       "outlier": "high",
       "place": "\ub3d9\ud0c45\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "2000000",
       "time": "2\uc77c \uc804"
     },
@@ -725,7 +725,7 @@ const Dummy_Data =
       "name": "\ub77c\uc774\ub178 \ud54f \uc544\uc774\ud328\ub4dc\uc5d0\uc5b44 \uac15\ud654\uc720\ub9ac \ubcf4\ud638 \ud544\ub984 0.4mm",
       "outlier": "low",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "8000",
       "time": "2\uc77c \uc804"
     },
@@ -736,7 +736,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44 64\uae30\uac00",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "350000",
       "time": "2\uc77c \uc804"
     },
@@ -747,7 +747,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44 wifi 64GB \uc2a4\ud398\uc774\uc2a4 \uadf8\ub808\uc774",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "550000",
       "time": "2\uc77c \uc804"
     },
@@ -758,7 +758,7 @@ const Dummy_Data =
       "name": "\ub9e5\ubd81\uc5d0\uc5b42014 13\uc778\uce58 i5 RAM 4GB SSD 128GB",
       "outlier": "low",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uacc4\uc591\uad6c \uacc4\uc0b02\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "199000",
       "time": "2\uc77c \uc804"
     },
@@ -769,7 +769,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b4 4 64 wi-fi \uc560\ud50c\ud39c\uc2ac 1\uc138\ub300",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ub0a8\uad6c \uc6a9\ud6045\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "650000",
       "time": "2\uc77c \uc804"
     },
@@ -780,7 +780,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "650000",
       "time": "2\uc77c \uc804"
     },
@@ -791,7 +791,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44\uc138\ub300 64gb \uc640\uc774\ud30c\uc774 \uc2a4\uce74\uc774\ube14\ub8e8 + \uc560\ud50c\ud39c\uc2ac2\uc138\ub300",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ubd80\ud3c9\uad6c \ubd80\ud3c94\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "690000",
       "time": "2\uc77c \uc804"
     },
@@ -802,7 +802,7 @@ const Dummy_Data =
       "name": "(\uae09\ucc98)\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \uc140\ub8f0\ub7ec 64\uae30\uac00",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "500000",
       "time": "3\uc77c \uc804"
     },
@@ -813,7 +813,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b4 4 256",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "250000",
       "time": "3\uc77c \uc804"
     },
@@ -824,7 +824,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 256G",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "650000",
       "time": "3\uc77c \uc804"
     },
@@ -835,7 +835,7 @@ const Dummy_Data =
       "name": "\uc0e4\uc624\ubbf8 \ubbf8\uc9c0\uc544 S1 \uc5d0\uc5b4\ud38c\ud504 \ubbf8\uac1c\ubd09 \ud0dd\ud3ec 4\ub9cc\uc6d0",
       "outlier": "normal",
       "place": "\uc5f0\ubb34\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "40000",
       "time": "3\uc77c \uc804"
     },
@@ -846,7 +846,7 @@ const Dummy_Data =
       "name": "20\ub9cc. \ub098\uc774\ud0a4 \uc5d0\uc5b4\uc870\ub3584 \ub808\ud2b8\ub85c",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "200000",
       "time": "3\uc77c \uc804"
     },
@@ -857,7 +857,7 @@ const Dummy_Data =
       "name": "\uacc4\uc591\uc5d0\uc5b4\ud0c0\uce74(ct64)4\ub9cc\uc6d0",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "40000",
       "time": "3\uc77c \uc804"
     },
@@ -868,7 +868,7 @@ const Dummy_Data =
       "name": "\uc0bd\ub2c8\ub2e4 \ud1a0\uc774\uc2a4\ud0c0 m4a1 fv 20\uc138\uc6a9 \uc5d0\uc5b4\ucf55\ud0b9\uac74 \uc0bd\ub2c8\ub2e4",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "49000",
       "time": "3\uc77c \uc804"
     },
@@ -879,7 +879,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b4 4\uc138\ub300 + \ud39c\uc2ac 2\uc138\ub300 \uc815\ud488 \ud310\ub9e4\ud574\uc694 \uc0c1\ud0dc \uc88b\uc544\uc694",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ub0a8\ub3d9\uad6c \ub9cc\uc2184\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "680000",
       "time": "3\uc77c \uc804"
     },
@@ -890,7 +890,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 64G wifi \uc560\ud50c\ucf00\uc5b4",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "600000",
       "time": "3\uc77c \uc804"
     },
@@ -901,7 +901,7 @@ const Dummy_Data =
       "name": "\ub098\uc774\ud0a4 \uc5d0\uc5b4\uc870\ub3584 \ub808\ud2b8\ub85c \uc653\ub354",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "200000",
       "time": "4\uc77c \uc804"
     },
@@ -912,7 +912,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44+\uc560\ud50c\ud39c\uc2ac+\uc545\uc138\uc0ac\ub9ac \ud31d\ub2c8\ub2e4",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "700000",
       "time": "4\uc77c \uc804"
     },
@@ -923,7 +923,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 256 \uc140\ub8f0\ub7ec",
       "outlier": "normal",
       "place": "\uc640\ubd80\uc74d",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "710000",
       "time": "4\uc77c \uc804"
     },
@@ -934,7 +934,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44\uc138\ub300 5\uc138\ub300 11\uc778\uce58 \ucf00\uc774\uc2a4 \ubb34\ubc30",
       "outlier": "low",
       "place": "\uc8fc\uc548\uc5ed",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "10900",
       "time": "4\uc77c \uc804"
     },
@@ -945,7 +945,7 @@ const Dummy_Data =
       "name": "\ub9e5\ubd81\uc5d0\uc5b4 2015 11\uc778\uce58 \ucda9\uc804\uae30 i5/4G/256G",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "300000",
       "time": "4\uc77c \uc804"
     },
@@ -956,7 +956,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44\uc138\ub300 64\uae30\uac00 \uc640\uc774\ud30c\uc774",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc11c\uad6c \uccad\ub77c3\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "370000",
       "time": "5\uc77c \uc804"
     },
@@ -967,7 +967,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 64G \uc2a4\uce74\uc774\ube14\ub8e8 Wifi",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "630000",
       "time": "5\uc77c \uc804"
     },
@@ -978,7 +978,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44",
       "outlier": "high",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "5000000",
       "time": "5\uc77c \uc804"
     },
@@ -989,7 +989,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 64 \uc2a4\uadf8 wifi \ubc15\uc2a4O \uc560\ucf00\ud50cO",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "600000",
       "time": "5\uc77c \uc804"
     },
@@ -1000,7 +1000,7 @@ const Dummy_Data =
       "name": "JMW \uc5d0\uc5b4\ube44 MC4A01A \ud5e4\uc5b4\ub4dc\ub77c\uc774\uae30 \ud56d\uacf5\ubaa8\ud130 \ud0dd\ud3ec",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "65000",
       "time": "5\uc77c \uc804"
     },
@@ -1011,7 +1011,7 @@ const Dummy_Data =
       "name": "(789) A+\uae09 \uc544\uc774\ud328\ub4dc\uc5d0\uc5b44\uc138\ub300 64G \ub85c\uc988\uace8\ub4dc",
       "outlier": "normal",
       "place": "\ubd84\ub2f9\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "570000",
       "time": "5\uc77c \uc804"
     },
@@ -1022,7 +1022,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44 wife 64GB \uc2e4\ubc84\uc0c9\uc0c1",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "600000",
       "time": "6\uc77c \uc804"
     },
@@ -1033,7 +1033,7 @@ const Dummy_Data =
       "name": "A1466\ub9e5\ubd81\uc5d0\uc5b47S\uae0913\uc778\uce58\ucf54\ub4dci5\uba544\uae30\uac00\uc800128\uae30\uac00",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "370000",
       "time": "6\uc77c \uc804"
     },
@@ -1044,7 +1044,7 @@ const Dummy_Data =
       "name": "\uc5d0\uc5b4\uc18c\ud504\ud2b8\uac74 \ud310\ub9e4\ud569\ub2c8\ub2e4(50\uc8fc\ub144 AKS 74U, LH9 MK2, M4 CQB)",
       "outlier": "low",
       "place": "\ub0a8\ucc9c1\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "20000",
       "time": "6\uc77c \uc804"
     },
@@ -1055,7 +1055,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44 65\uae30\uac00 \uc560\ud50c\ud39c\uc2ac\ud3ec\ud568",
       "outlier": "normal",
       "place": "\uc11c\uc6d0\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "550000",
       "time": "6\uc77c \uc804"
     },
@@ -1066,7 +1066,7 @@ const Dummy_Data =
       "name": "\ud2b8\ub799\uc2a41.4\ud130\ubcf4 \uc5d0\uc5b4\ub9e4\uc2a4 \ud50c\ub85c\uc5b4\uc13c\uc11c",
       "outlier": "normal",
       "place": "\ubd80\ud3c96\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "100000",
       "time": "6\uc77c \uc804"
     },
@@ -1077,7 +1077,7 @@ const Dummy_Data =
       "name": "\uc790\uc774\ub85c\ucf65 g\uc5d0\uc5b4\ud50c\ub7ec\uc2a4 10.4 \uae09\ucc98!!",
       "outlier": "normal",
       "place": "\uc624\ub0a8\uc74d",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "145000",
       "time": "6\uc77c \uc804"
     },
@@ -1088,7 +1088,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc air4 +\uc560\ud50c\ud39c\uc2ac 2\uc138\ub300",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "600000",
       "time": "6\uc77c \uc804"
     },
@@ -1099,7 +1099,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b43 \uc2e4\ubc84 64\uae30\uac00+\uc560\ud50c\ud39c\uc2ac \ud314\uc544\uc694",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc5f0\uc218\uad6c \uc1a1\ub3c43\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "350000",
       "time": "6\uc77c \uc804"
     },
@@ -1110,7 +1110,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44 256\uae30\uac00 \uc2a4\uadf8",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "600000",
       "time": "6\uc77c \uc804"
     },
@@ -1121,7 +1121,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 64GB wifi \uc2a4\uce74\uc774\ube14\ub8e8 \uc560\ucf00\ud50c ~\u201823.1.8",
       "outlier": "normal",
       "place": "\uc5f0\uc2181\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "600000",
       "time": "7\uc77c \uc804"
     },
@@ -1132,7 +1132,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44+\uc560\ud50c\ud39c\uc2ac2\uc138\ub300",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "770000",
       "time": "7\uc77c \uc804"
     },
@@ -1143,7 +1143,7 @@ const Dummy_Data =
       "name": "\ud3ec\ub4dc \ubaac\ub370\uc624 4\uc138\ub300 \ud2f0\ud0c0\ub284 \ubaa8\ub378 (\uc624\ub514\uc624 \uacf5\uc870\uae30 \uc5d0\uc5b4\ucee8 \ubc84\ud2bc)",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "150000",
       "time": "7\uc77c \uc804"
     },
@@ -1154,7 +1154,7 @@ const Dummy_Data =
       "name": "\ub098\uc774\ud0a4 \uc5d0\uc5b4\uc870\ub3584 \ubc00\ub9ac\ud130\ub9ac \ube14\ub799",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "90000",
       "time": "7\uc77c \uc804"
     },
@@ -1165,7 +1165,7 @@ const Dummy_Data =
       "name": "(\ubbf8\uac1c\ubd09) \uc544\uc774\ud328\ub4dc \uc5d0\uc5b45 wifi 64GB \uc2a4\ud398\uc774\uc2a4\uadf8\ub808\uc774,\ube14\ub8e8",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc11c\uad6c \uac00\uc88c4\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "780000",
       "time": "7\uc77c \uc804"
     },
@@ -1176,7 +1176,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \ube14\ub8e8",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "500000",
       "time": "7\uc77c \uc804"
     },
@@ -1187,7 +1187,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44\uc138\ub300 \uc561\uc815\ud30c\uc190 \ubd80\ud488\uc6a9",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "149000",
       "time": "8\uc77c \uc804"
     },
@@ -1198,7 +1198,7 @@ const Dummy_Data =
       "name": "\uc5d0\uc5b4\ud3ec\uc2a4 \uce74\ub2c8\ubc1c 4\uc138\ub300 \ucc28\ubc15 \ub9e4\ud2b8 \ud31d\ub2c8\ub2e4~",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "270000",
       "time": "8\uc77c \uc804"
     },
@@ -1209,7 +1209,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44, \uc560\ud50c\ud39c\uc2ac 2\uc138\ub300",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "750000",
       "time": "8\uc77c \uc804"
     },
@@ -1220,7 +1220,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc\uc5d0\uc5b44",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "600000",
       "time": "9\uc77c \uc804"
     },
@@ -1231,7 +1231,7 @@ const Dummy_Data =
       "name": "(\ubc18\uac12\ud0dd\ubc30\ubb34\ub8cc\ubc30\uc1a1)\uc548\ub2e4\ub974 \uc5d0\uc5b4\ucf54\ud2bc \uc2ac\ub9ac\ube0c\ub9ac\uc2a4 \ube14\ub799 4",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "35000",
       "time": "9\uc77c \uc804"
     },
@@ -1242,7 +1242,7 @@ const Dummy_Data =
       "name": "\ub098\uc774\ud0a4 \uc5d0\uc5b4\uc870\ub3584 \ubc00\ub9ac\ud130\ub9ac \ube14\ub799",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "80000",
       "time": "9\uc77c \uc804"
     },
@@ -1253,7 +1253,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 64G wifi \uc2a4\uce74\uc774\ube14\ub8e8+ \uc560\ud50c\ud39c\uc2ac",
       "outlier": "normal",
       "place": "\ucc3d\ub989\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "850000",
       "time": "9\uc77c \uc804"
     },
@@ -1264,7 +1264,7 @@ const Dummy_Data =
       "name": "\ub098\uc774\ud0a4 / \ub098\uc774\ud0a4 \uc5d0\uc5b4 \ud6c4\ub4dc\uc9d1\uc5c5, \ub0a8\uc131 \ud6c4\ub4dc / L / 4\ub9cc\uc6d0",
       "outlier": "normal",
       "place": "None",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "40000",
       "time": "9\uc77c \uc804"
     },
@@ -1275,7 +1275,7 @@ const Dummy_Data =
       "name": "\ud2b8\ub799\uc2a4/\ub354\ub274\ud2b8\ub799\uc2a4 1.4\ud130\ubcf4 \ucc28\uc838\uc5d0\uc5b4\ucfe8\ub7ec\uc778\ub137\ud638\uc2a4",
       "outlier": "normal",
       "place": "\ubd80\ud3c96\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "100000",
       "time": "9\uc77c \uc804"
     },
@@ -1286,7 +1286,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 64\uae30\uac00 \uc2a4\ud398\uc774\uc2a4\uadf8\ub808\uc774 \uc911\uace0 \ud310\ub9e4\ud569\ub2c8\ub2e4.",
       "outlier": "normal",
       "place": "\uc131\ub0b42\ub3d9",
-      "platform": "\uc911\uace0 \ub098\ub77c",
+      "platform": "\uc911\uace0\ub098\ub77c",
       "price": "520000",
       "time": "10\uc77c \uc804"
     },
@@ -1297,7 +1297,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b4 4",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ubd80\ud3c9\uad6c \ubd80\uac1c2\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "600000",
       "time": "1\ub2ec \uc804"
     },
@@ -1308,7 +1308,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \u3147\u3131\u3147 \uc601\uad6c\ucc28\ub2e8",
       "outlier": "low",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ub0a8\ub3d9\uad6c \uad6c\uc6d41\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "1000",
       "time": "1\ub2ec \uc804"
     },
@@ -1319,7 +1319,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b4 4  64G \uc140\ub8f0\ub7ec \ud31d\ub2c8\ub2e4 \ud39c\uc2ac/\ud0a4\ubcf4\ub4dc\ud3ec\ud568",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc11c\uad6c \uac00\uc88c3\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "750000",
       "time": "1\ub2ec \uc804"
     },
@@ -1330,7 +1330,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 64GB wifi",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc911\uad6c \uc6b4\uc11c\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "600000",
       "time": "1\ub2ec \uc804"
     },
@@ -1341,7 +1341,7 @@ const Dummy_Data =
       "name": "[\uc0bd\ub2c8\ub2e4] \uc544\uc774\ud328\ub4dc \uc5d0\uc5b45\uc138\ub300 64\uae30\uac00",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ubd80\ud3c9\uad6c \ubd80\ud3c91\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "600000",
       "time": "1\ub2ec \uc804"
     },
@@ -1352,7 +1352,7 @@ const Dummy_Data =
       "name": "\ubd80\ud488\uc6a9 \uc544\uc774\ud328\ub4dc \uc5d0\uc5b4 A1474 32GB",
       "outlier": "low",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ub0a8\ub3d9\uad6c \ub9cc\uc2185\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "40000",
       "time": "1\ub2ec \uc804"
     },
@@ -1363,7 +1363,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \ubc30\ud130\ub9ac\uc0ac\uc774\ud074 1\ud68c",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ub0a8\uad6c \uc8fc\uc5485\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "520000",
       "time": "1\ub2ec \uc804"
     },
@@ -1374,7 +1374,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b44 \uc2a4\uadf8 64 \uc560\ud50c\ud39c\uc2ac 2\uc138\ub300",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ub0a8\ub3d9\uad6c \ub9cc\uc2183\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "700000",
       "time": "1\ub2ec \uc804"
     },
@@ -1385,7 +1385,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b43 64gb + \uc560\ud50c\ud39c\uc2ac1 \ud480\ubc15 \ud314\uc544\uc694",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc11c\uad6c \uc5f0\ud76c\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "390000",
       "time": "2\ub2ec \uc804"
     },
@@ -1396,7 +1396,7 @@ const Dummy_Data =
       "name": "\ub9e5\ubd81\uc5d0\uc5b42015 13\uc778\uce58 i5 RAM 4GB SSD 128GB",
       "outlier": "low",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uacc4\uc591\uad6c \uacc4\uc5912\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "215000",
       "time": "2\ub2ec \uc804"
     },
@@ -1407,7 +1407,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b45 64G \uc2a4\ud398\uc774\uc2a4 \uadf8\ub808\uc774 \ud31d\ub2c8\ub2e4.",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ub0a8\uad6c \ub3c4\ud6541\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "600000",
       "time": "2\ub2ec \uc804"
     },
@@ -1418,7 +1418,7 @@ const Dummy_Data =
       "name": "\uc544\uc774\ud328\ub4dc \uc5d0\uc5b43 64g wife + \ud39c\uc2ac 1\uc138\ub300",
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc11c\uad6c \uccad\ub77c3\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "410000",
       "time": "2\ub2ec \uc804"
     },
@@ -1429,7 +1429,7 @@ const Dummy_Data =
       "name": "(\ud0dd\ud3ec) \uc544\uc774\ud328\ub4dc \uc5d0\uc5b45 \uc5d0\uc5b44 \uc218\ub0a9\ud640\ub354 \ucf00\uc774\uc2a4",
       "outlier": "low",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uacc4\uc591\uad6c \ud6a8\uc1311\ub3d9",
-      "platform": "\ubc88\uac1c \uc7a5\ud130",
+      "platform": "\ubc88\uac1c\uc7a5\ud130",
       "price": "5000",
       "time": "2\ub2ec \uc804"
     },

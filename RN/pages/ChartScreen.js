@@ -140,10 +140,11 @@ function ChartScreen({ navigation }) {
     setChartName(keyword);
   }
 
-  //시세 평균, 쉼표 붙이기
+  //평균 구하는 함수
   const getAvg = (arr) => {
     let avg = arr.reduce((a, b) => a + b) / arr.length;
-    avg = avg.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    avg = Math.round(parseFloat(avg) / 100) * 100; //반올림
+    avg = avg.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','); //쉼표 붙이기
     return avg
   }
 
