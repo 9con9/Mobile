@@ -6,6 +6,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Fontisto } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
 
 //pages
 import HomeScreen from './pages/HomeScreen';
@@ -36,14 +37,14 @@ export default function App() {
               return <AntDesign name={iconName} size={size} color={color} />;
 
             } else if (route.name === 'Issue') {
-              return <FontAwesome name="newspaper-o" size={24} color="black" />
+              return <Entypo name="news" size={size} color={color} />
 
             } else {
               return <Ionicons name="person" size={size} color={color} />;
             }
           },
 
-          tabBarActiveTintColor: 'tomato',
+          tabBarActiveTintColor: '#2DB883',
           tabBarInactiveTintColor: 'gray',
         })}
       >
