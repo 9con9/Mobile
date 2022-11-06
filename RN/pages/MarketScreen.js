@@ -1447,14 +1447,14 @@ function MarketScreen({ route, navigation }) {
   const [text, setText] = React.useState("");
 
   //picker, 마켓 필터링
-  const [selected, setSelected] = useState("전체");
+  const [selected, setSelected] = useState("최신순");
 
   useEffect(() => {
     filterItems(selected);
   }, [selected]);
 
   const filterItems = (str) => {
-    if (str === "가격") {
+    if (str === "최신순") {
       setCopyItemData(itemData);
     }
     else if (str === "평균가") {
@@ -1562,7 +1562,7 @@ function MarketScreen({ route, navigation }) {
       {loading &&
       <View style={{width:'100%', alignItems:'center', marginTop:15}}>
         <ActivityIndicator size="large" color="#0000ff" />
-        <Text>검색 중입니다.</Text>
+        <Text style={{ color: '#148CFF' }}>👀상품 데이터를 수집하고 있어요.</Text>
       </View>
       }
 
@@ -1578,7 +1578,7 @@ function MarketScreen({ route, navigation }) {
             selectedValue={selected}
             onValueChange={(itemValue, itemIndex) =>{setSelected(itemValue)}}
             >
-            <Picker.Item label="가격" value="가격" />
+            <Picker.Item label="최신순" value="최신순" />
             <Picker.Item label="평균가" value="평균가" />
             <Picker.Item label="시세 이하" value="시세 이하" />
             <Picker.Item label="시세 이상" value="시세 이상" />
