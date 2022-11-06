@@ -1501,7 +1501,21 @@ function MarketScreen({ route, navigation }) {
   //검색 실행 메서드
   const onSearch = () => {
     console.log("검색어 :"+text)
+    if(loading){
+      Alert.alert("❗ 이미 검색이 진행되고 있어요.")
+      return
+    }
     startPy(text)
+  }
+
+  //카테고리 검색
+  const categorySearch = (str) => {
+    console.log("카테고리 검색어 :"+str)
+    if(loading){
+      Alert.alert("❗ 이미 검색이 진행되고 있어요.")
+      return
+    }
+    startPy(str)
   }
 
   return (
@@ -1524,34 +1538,31 @@ function MarketScreen({ route, navigation }) {
 
       <SafeAreaView>
         <ScrollView horizontal={true} style={styles.scrollBox} >
-          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={() => console.log('Pressed')}>
+          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={(str) => categorySearch("디지털기기")}>
             디지털기기
           </Button>
-          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={() => console.log('Pressed')}>
+          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={(str) => categorySearch("가구/인테리어")}>
             가구/인테리어
           </Button>
-          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={() => console.log('Pressed')}>
+          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={(str) => categorySearch("유아용품")}>
             유아용품
           </Button>
-          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={() => console.log('Pressed')}>
+          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={(str) => categorySearch("스포츠/레저")}>
             스포츠/레저
           </Button>
-          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={() => console.log('Pressed')}>
+          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={(str) => categorySearch("의류")}>
             의류
           </Button>
-          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={() => console.log('Pressed')}>
+          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={(str) => categorySearch("도서/티켓/문구")}>
             도서/티켓/문구
           </Button>
-          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={() => console.log('Pressed')}>
-            악기
-          </Button>
-          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={() => console.log('Pressed')}>
+          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={(str) => categorySearch("반려동물")}>
             반려동물
           </Button>
-          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={() => console.log('Pressed')}>
+          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={(str) => categorySearch("미용")}>
             미용
           </Button>
-          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={() => console.log('Pressed')}>
+          <Button style={styles.btnStyle} textColor='grey' compact='true' borderColor='grey' mode="outlined" onPress={(str) => categorySearch("콘솔게임")}>
             콘솔게임
           </Button>
         </ScrollView>
