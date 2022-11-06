@@ -13,22 +13,25 @@ const Card = (props) => {
         <View style={{flex:1}}>
             <View style={{ borderRadius: 10, overflow: 'hidden', width: SCREEN_WIDTH / 2.1, }}>
                 <TouchableOpacity onPress={link}>
-                <ImageBackground style={styles.Img} source={{ uri: props.item.img_link }}>
-                    <View style={{
-                        ...styles.outlierview,
-                        borderColor: props.item.outlier === 'low' ? '#FF9133' :
-                            props.item.outlier === 'normal' ? '#38CC44' : '#FF4B4B'
-                    }}>
-                        <Text style={{fontSize:13,
-                            color: props.item.outlier === 'low' ? '#FF9133' :
-                            props.item.outlier === 'normal' ? '#38CC44' : '#FF4B4B'
-                        }}>
-                            {props.item.outlier === 'normal' ? "평균가에요!" :
-                                props.item.outlier === 'high' ? "시세 이상" : "시세 이하"
-                            }
-                        </Text>
-                    </View>
-                </ImageBackground>
+                    <ImageBackground style={styles.Img} source={{ uri: props.item.img_link }}>
+                        {props.item.outlier &&
+                            <View style={{
+                                ...styles.outlierview,
+                                borderColor: props.item.outlier === 'low' ? '#FF9133' :
+                                    props.item.outlier === 'normal' ? '#38CC44' : '#FF4B4B'
+                            }}>
+                                <Text style={{
+                                    fontSize: 13,
+                                    color: props.item.outlier === 'low' ? '#FF9133' :
+                                        props.item.outlier === 'normal' ? '#38CC44' : '#FF4B4B'
+                                }}>
+                                    {props.item.outlier === 'normal' ? "평균가에요!" :
+                                        props.item.outlier === 'high' ? "시세 이상" : "시세 이하"
+                                    }
+                                </Text>
+                            </View>
+                        }
+                    </ImageBackground>
                 </TouchableOpacity>
             </View>
 
