@@ -7,7 +7,7 @@ import { AntDesign } from '@expo/vector-icons';
 
 //Axios
 import axios from 'axios';
-const baseUrl = 'http://54.160.212.208:5000/';
+const baseUrl = 'http://54.227.126.49:5000/';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
@@ -132,6 +132,7 @@ function ChartScreen({ navigation }) {
           })
           .catch(function(error){
           console.log(error.response.data);
+          Alert.alert("❗ 400 error")
         })
     } catch (error) {
       console.log(error.response.data);
