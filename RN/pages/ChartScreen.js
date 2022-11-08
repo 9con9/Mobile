@@ -7,7 +7,7 @@ import { AntDesign } from '@expo/vector-icons';
 
 //Axios
 import axios from 'axios';
-const baseUrl = 'http://54.174.0.44:5000/';
+const baseUrl = 'http://54.160.212.208:5000/';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
@@ -151,9 +151,17 @@ function ChartScreen({ navigation }) {
   //검색 실행 메서드
   const onSearch = () => {
     console.log("검색어 :"+text)
+    if (loading) {
+      Alert.alert("❗ 이미 검색이 진행되고 있어요.")
+      return
+    }
+    if (text == ""){
+      Alert.alert("❗ 검색어를 입력하세요.")
+      return
+    }
     startPy(text)
   }
-  
+
   return (
     <View style={{ flex: 1 }}>
       <StatusBar style="auto" barStyle='light-content' />
@@ -175,7 +183,7 @@ function ChartScreen({ navigation }) {
         <TouchableOpacity>
           <Searchbar
             mode='outlined'
-            placeholder="지역 상품명으로 검색하세요!"
+            placeholder="예) 천안 아이패드 에어3"
             inputStyle={{ fontSize: 15, color: 'grey' }}
             value={text}
             onChangeText={text => setText(text)}

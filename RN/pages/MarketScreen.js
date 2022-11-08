@@ -8,7 +8,7 @@ import { Picker } from '@react-native-picker/picker';
 
 //Axios
 import axios from 'axios';
-const baseUrl = 'http://54.174.0.44:5000/';
+const baseUrl = 'http://54.160.212.208:5000/';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
@@ -22,7 +22,7 @@ const Dummy_Data =
       "outlier": "normal",
       "place": "None",
       "platform": "\uc911\uace0\ub098\ub77c",
-      "price": "520000",
+      "price": "520,000",
       "time": "6\ubd84 \uc804"
     },
     {
@@ -33,7 +33,7 @@ const Dummy_Data =
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \uc11c\uad6c \uac80\ub2e81\ub3d9",
       "platform": "\ubc88\uac1c\uc7a5\ud130",
-      "price": "550000",
+      "price": "550,000",
       "time": "1\uc2dc\uac04 \uc804"
     },
     {
@@ -44,7 +44,7 @@ const Dummy_Data =
       "outlier": "high",
       "place": "\uc778\ucc9c \uc11c\uad6c \uc2ec\uace1\ub3d9",
       "platform": "\ub2f9\uadfc\ub9c8\ucf13",
-      "price": "750000",
+      "price": "750,000",
       "time": "1\uc2dc\uac04 \uc804"
     },
     {
@@ -55,7 +55,7 @@ const Dummy_Data =
       "outlier": "normal",
       "place": "\uad8c\uc1202\ub3d9",
       "platform": "\uc911\uace0\ub098\ub77c",
-      "price": "540000",
+      "price": "540,000",
       "time": "1\uc2dc\uac04 \uc804"
     },
     {
@@ -66,7 +66,7 @@ const Dummy_Data =
       "outlier": "normal",
       "place": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ubd80\ud3c9\uad6c \ubd80\ud3c91\ub3d9",
       "platform": "\ubc88\uac1c\uc7a5\ud130",
-      "price": "700000",
+      "price": "700,000",
       "time": "1\uc2dc\uac04 \uc804"
     },
     {
@@ -77,7 +77,7 @@ const Dummy_Data =
       "outlier": "normal",
       "place": "None",
       "platform": "\uc911\uace0\ub098\ub77c",
-      "price": "700000",
+      "price": "700,000",
       "time": "1\uc2dc\uac04 \uc804"
     },
     {
@@ -88,7 +88,7 @@ const Dummy_Data =
       "outlier": "normal",
       "place": "\uc640\ubd80\uc74d",
       "platform": "\uc911\uace0\ub098\ub77c",
-      "price": "700000",
+      "price": "700,000",
       "time": "2\uc2dc\uac04 \uc804"
     },
     {
@@ -99,7 +99,7 @@ const Dummy_Data =
       "outlier": "normal",
       "place": "None",
       "platform": "\uc911\uace0\ub098\ub77c",
-      "price": "45000",
+      "price": "45,000",
       "time": "2\uc2dc\uac04 \uc804"
     },
     {
@@ -110,7 +110,7 @@ const Dummy_Data =
       "outlier": "normal",
       "place": "\uac80\ub2e8\uc0ac\uac70\ub9ac\uc5ed",
       "platform": "\uc911\uace0\ub098\ub77c",
-      "price": "550000",
+      "price": "550,000",
       "time": "2\uc2dc\uac04 \uc804"
     },
     {
@@ -1487,8 +1487,13 @@ function MarketScreen({ route, navigation }) {
         },
       })
         .then(res => {
-          setItemData(res.data);
-          setCopyItemData(res.data);
+          console.log("결과:", res.data)
+          if(res.data.length === 0){
+            Alert.alert("검색 실패에용")
+          } else {
+            setItemData(res.data);
+            setCopyItemData(res.data);
+          }
         })
         .catch(function (error) {
           console.log(error.response.data);
@@ -1506,6 +1511,10 @@ function MarketScreen({ route, navigation }) {
       Alert.alert("❗ 이미 검색이 진행되고 있어요.")
       return
     }
+    if (text == ""){
+      Alert.alert("❗ 검색어를 입력하세요.")
+      return
+    }
     setIsCategorySearch(false);
     startPy(text)
   }
@@ -1515,6 +1524,10 @@ function MarketScreen({ route, navigation }) {
     console.log("카테고리 검색어 :" + str)
     if (loading) {
       Alert.alert("❗ 이미 검색이 진행되고 있어요.")
+      return
+    }
+    if (text == ""){
+      Alert.alert("❗ 검색어를 입력하세요.")
       return
     }
     setIsCategorySearch(true);
