@@ -1527,10 +1527,6 @@ function MarketScreen({ route, navigation }) {
       Alert.alert("❗ 이미 검색이 진행되고 있어요.")
       return
     }
-    if (text == ""){
-      Alert.alert("❗ 검색어를 입력하세요.")
-      return
-    }
     setIsCategorySearch(true);
     startPy(str)
   }
