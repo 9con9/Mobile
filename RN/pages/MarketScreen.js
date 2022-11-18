@@ -8,7 +8,7 @@ import { Picker } from '@react-native-picker/picker';
 
 //Axios
 import axios from 'axios';
-const baseUrl = 'http://54.227.126.49:5000/';
+const baseUrl = 'http://23.22.235.3:5000/';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
